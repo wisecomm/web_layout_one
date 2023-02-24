@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_layout_one/main_page/title_bar/title_bar.dart';
 
+import 'main_item.dart';
 import 'side_menu.dart';
 
 class AppLayout extends StatefulWidget {
@@ -37,9 +38,8 @@ class _AppLayoutState extends State {
             Expanded(
               child: Container(
                 color: Colors.deepPurple.withOpacity(0.50),
-                child: const Center(
-                  child: Text("main content section"),
-                ),
+                child: const Center(child: MainItem(data: topChart) //here
+                    ),
               ),
             ),
           ],
